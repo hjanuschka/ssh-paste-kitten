@@ -51,12 +51,24 @@ cp ssh-paste-kitten/ssh_drop_upload.py ~/.config/kitty/
 Add this line to `~/.config/kitty/kitty.conf`:
 
 ```conf
+# Enable remote control (for kitty @ commands)
+allow_remote_control yes
+
+# SSH Drop Upload watcher
 watcher ssh_drop_upload.py
 ```
 
-### 3. Restart kitty
+### 3. Reload kitty config
 
-Either restart kitty or press `Ctrl+Shift+F5` to reload config.
+From within a kitty terminal, run:
+
+```bash
+kitty @ load-config
+```
+
+Or press `Ctrl+Shift+F5`.
+
+**Note:** Watchers only apply to new windows. Open a new tab/window after reloading, or restart kitty completely.
 
 ## Usage
 

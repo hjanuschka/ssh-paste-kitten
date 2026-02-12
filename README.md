@@ -60,15 +60,15 @@ watcher ssh_drop_upload.py
 
 ### 3. Reload kitty config
 
-From within a kitty terminal, run:
+Press `Ctrl+Shift+F5` to reload the config.
+
+Or if you have `allow_remote_control yes` in your config, run:
 
 ```bash
 kitty @ load-config
 ```
 
-Or press `Ctrl+Shift+F5`.
-
-**Note:** Watchers only apply to new windows. Open a new tab/window after reloading, or restart kitty completely.
+**Note:** Watchers only apply to **new windows**. Open a new tab/window after reloading, or restart kitty completely.
 
 ## Usage
 
